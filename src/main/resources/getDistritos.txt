@@ -1,0 +1,1 @@
+pid=1041743280551021.9&_clase=ubigeo&_accion=getDistritos&tipoC=acta&prov_id=%s&tipoElec=&modElec=

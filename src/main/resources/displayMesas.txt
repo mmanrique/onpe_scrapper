@@ -1,0 +1,1 @@
+pid=8244526392055418&_clase=mesas&_accion=displayMesas&ubigeo=%s&nroMesa=%s&tipoElec=10&page=1&pornumero=1
