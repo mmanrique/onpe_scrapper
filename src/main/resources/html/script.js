@@ -76,7 +76,7 @@ $(document).ready(function () {
             var centroid = path.centroid(d);
             x = centroid[0];
             y = centroid[1];
-            k = 4;
+            k = 20;
             centered = d;
         } else {
             x = width / 2;
@@ -114,13 +114,14 @@ $(document).ready(function () {
         var per_nulos = nulos * 100 / total_votos;
         var per_impugnados = impugnados * 100 / total_votos;
 
-        $('#nombre').text(d.properties.name);
+        $('#distrito').text(d.properties.name);
+        $('#provincia').text(d.properties.provincia);
+        $('#departamento').text(d.properties.departamento);
         $('#ppk').text(ppk);
         $('#fp').text(fp);
         $('#inpug').text(impugnados);
         $('#null').text(nulos);
         $('#total').text(d.properties.total);
-        $('#departamento').text(d.properties.departamento);
 
         $('#per-ppk').text(per_ppk);
         $('#per-fp').text(per_fp);
@@ -131,7 +132,7 @@ $(document).ready(function () {
     }
 
 
-    d3.json("../geojson/output/provincias_summary.json", function (error, json) {
+    d3.json("../geojson/output/distritos_summary.json", function (error, json) {
         if (error) console.log(error);
         var features = json.features;
         console.log(features.length);
